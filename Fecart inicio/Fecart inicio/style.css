@@ -259,3 +259,16 @@ header {
     transform: translateY(-3px); /* leve efeito de “levitar” */
 }
 
+.linha {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espaço entre as caixas */
+}
+
+.cartao {
+  width: 120px;
+  height: 120px;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
