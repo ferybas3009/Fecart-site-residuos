@@ -1,0 +1,261 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header estilo Mercado Livre */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #00a331;
+    /* amarelo ML */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-bg img {
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+/* Barra de pesquisa */
+.pesquisa-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.pesquisa-container input {
+    width: 60%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #00a650;
+    /* verde do ML */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #008f4c;
+}
+
+/* Links e carrinho */
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.links-container img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 90vh;
+    /* Ocupa 70% da altura da tela */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('background2.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.text-ods {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    max-width: 600px; /* largura máxima do parágrafo */
+    margin: 0 auto;   /* centraliza horizontalmente */
+    text-align: center; /* centraliza o texto dentro do bloco */
+}
+
+/* Seção Passo a Passo */
+.passos {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.passos h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #2a7a2a; /* verde para sustentabilidade */
+}
+
+.passos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.passo {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.passo:hover {
+  transform: translateY(-10px);
+}
+
+.icone {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.passo h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #2a7a2a;
+}
+
+.passo p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.contato{
+    background-color: #008f4c;
+}
+
+/* Footer */
+.footer {
+  background-color: #2a7a2a; /* verde escuro */
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-secao {
+  flex: 1 1 200px;
+}
+
+.footer-secao h3 {
+  margin-bottom: 15px;
+  color: #d4f1d4; /* verde claro */
+}
+
+.footer-secao p, .footer-secao li {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.footer-secao ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-secao a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-secao a:hover {
+  color: #a3e4a3;
+}
+
+.redes-sociais a {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85em;
+  color: #cce6cc;
+}
+
+.logo-text{
+    
+    font-weight: bold;
+    position: relative;
+    left: 40px;
+    font-size: 24px;
+    color: #edf7ed;
+}
+
+/* Botão Explorar Agora */
+.explorar-botao {
+    text-align: center;      /* centraliza o botão */
+    margin-top: 30px;        /* espaço acima do botão */
+}
+
+.explorar-botao a {
+    display: inline-block;
+    background-color: #007f3e; /* verde escuro */
+    color: white;              /* cor do texto */
+    font-weight: bold;         /* negrito */
+    padding: 15px 40px;        /* espaço interno do botão */
+    border-radius: 30px;       /* cantos arredondados */
+    text-decoration: none;     /* remove sublinhado */
+    font-size: 1.1em;          /* tamanho da fonte */
+    transition: background-color 0.3s, transform 0.2s; /* efeito suave */
+}
+
+.explorar-botao a:hover {
+    background-color: #005f2a; /* verde mais escuro no hover */
+    transform: translateY(-3px); /* leve efeito de “levitar” */
+}
+
