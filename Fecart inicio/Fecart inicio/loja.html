@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-      <header>
-        <div class="logo-bg">
-            <img src="LOgo-removebg-preview.png" alt="Logo GreenLoop" class="logo">
-        </div>
-        <div>
-            <p class="logo-text">Green Loop</p>
+    <header>
+        <div class="logo-container">
+            <div class="logo-bg">
+                <img src="LOgo-removebg-preview.png" alt="Logo GreenLoop" class="logo">
+            </div>
+            <div>
+                <p class="logo-text">Green Loop</p>
+            </div>
         </div>
 
         <div class="pesquisa-container">
             <input type="text" placeholder="Pesquise resíduos, marcas e muito mais...">
             <button class="search-btn">🔍</button>
         </div>
-
 
         <div class="links-container">
             <a href="">Crie sua conta</a>
@@ -28,17 +29,71 @@
             <a href="EspacoVirtual.html">Explorar</a>
         </div>
     </header>
-        
-        <div class="linha">
-            <div class="cartao"></div>
-            <div class="cartao"></div>
-            <div class="cartao"></div>
-        </div>
 
-        <div class="linha">
-            <div class="cartao"></div>
-            <div class="cartao"></div>
-            <div class="cartao"></div>
-        </div>
+    <!-- CONTEÚDO DA LOJA -->
+    <div class="loja-container">
+        <!-- FILTROS -->
+        <aside class="filtros">
+            <h3>Filtros</h3>
+            <div class="filtro-item">
+                <label>Categoria:</label>
+                <select>
+                    <option>Todas</option>
+                    <option>Papel</option>
+                    <option>Plástico</option>
+                    <option>Metal</option>
+                </select>
+            </div>
+            <div class="filtro-item">
+                <label>Faixa de Preço:</label>
+                <input type="range" min="0" max="1000" step="10">
+            </div>
+            <div class="filtro-item">
+                <label>Disponibilidade:</label>
+                <select>
+                    <option>Todas</option>
+                    <option>Em estoque</option>
+                    <option>Esgotado</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- CARDS DE PRODUTOS -->
+        <main class="cards-container">
+            <div class="card">
+                <img src="produto1.jpg" alt="Produto 1">
+                <div class="card-content">
+                    <h4>Produto 1</h4>
+                    <p>Descrição do produto com algum detalhe importante para o cliente.</p>
+                    <span>R$ 50,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="produto2.jpg" alt="Produto 2">
+                <div class="card-content">
+                    <h4>Produto 2</h4>
+                    <p>Descrição do produto com algum detalhe importante para o cliente.</p>
+                    <span>R$ 80,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="produto3.jpg" alt="Produto 3">
+                <div class="card-content">
+                    <h4>Produto 3</h4>
+                    <p>Descrição do produto com algum detalhe importante para o cliente.</p>
+                    <span>R$ 120,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="produto4.jpg" alt="Produto 4">
+                <div class="card-content">
+                    <h4>Produto 4</h4>
+                    <p>Descrição do produto com algum detalhe importante para o cliente.</p>
+                    <span>R$ 95,00</span>
+                </div>
+            </div>
+            <!-- Mais cards aqui -->
+        </main>
+    </div>
 </body>
 </html>
